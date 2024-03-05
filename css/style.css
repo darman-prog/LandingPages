@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(3,1fr)3fr;
+   grid-template-areas: 
+   ". . . Titulo"
+   ". . . "
+   
+   
+   
+   
+   
+   ;
+
+
+
+}
+.banner{
+    background: var(-color--primary);
+    position: absolute
+}
+.words_1{
+    font-weight:  -90%;
+    grid-area: Titulo;
+    background: goldenrod;
+}
+.words_2{
+    background: red;
+    grid-area: parrafo;
+}
+.words_3{
+    background: violet;
+    grid-area: parrafo2;
+          
+}
+.words_4{
+    background: orange;
+    grid-area: parrafo3;
+
+}
+.logo{
+    background: blue;
+
+}
+.logo img{
+    background: orange;
+}
