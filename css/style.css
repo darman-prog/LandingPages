@@ -7,17 +7,19 @@ body{
    width: 100%;
    height: 100vh;
    display: grid;
-   grid-template-columns: repeat(3,1fr)3fr;
+   grid-template-columns: repeat(3,4fr)3fr;
+   grid-template-rows: repeat(3,3fr)3fr;
    grid-template-areas: 
-   "title1 . . ."
-   "imagen . . ."
-   ". . . . "
-   "parrafo1 . . ."
-
+   "title1 . . . .  "
+   "imagen1 . . . . "
+   "parrafo1 . . . ."
+   "title2 . . . . "
+   "imagen2 . . . . "
+   "parrafo2 . . . ."
+   "title3 . . . . "
+   "imagen3 . . . . "
+   "sub2 . parrafo3 . . "
    ;
-
-
-
 }
 .banner{
     background: var(-color--primary);
@@ -30,64 +32,104 @@ body{
     top: 50px;
     font-size: 70px;
     font-weight: 100;
+
 }
+.imagen0,
+.parrafo1,
+.title1{
+    position: relative;
+    right:  ,-50px;
+}
+.imagen0{
+    position: relative;
+    top: 380px;
+    display: grid;
+    left: -290px;
+}
+
 .title2{
     grid-area: title2;
     position: relative;
 
+
 }
 .title3{
+    
+    position: relative;
+    top: 50px;
+    left: -50px;
+    font-weight: 100;
     grid-area: title3;
-    font-size: 25px;
+    font-size: 23px
+    
+
 }
 .parrafo1{
     grid-area: parrafo3;
     position: relative;
-    top: 340px;
+    top: 390px;
     left: -290px;
-    font-size: 20px;
+    font-size: 23px;
+    width: -200px;
+    font-family:Arial, Helvetica, sans-serif;
 }
-.logo img{
-    position: relative;
-    top: 360px;
-    left: -320px;
-    border-radius: 15px;
-    grid-area: imagen;
-}
+
+.sub1,
 .parrafo2,
 .title2,
-.imagen{
+.imagen1{
     position: relative;
-    top: 60px;
+    top: 50px;
     left: -150px;
     font-size: 23px;
     font-weight: 100;
-    border-radius: 20px;
-
+    border-radius: 20px;  
+    height: -70px;
 }
-.imagen{
-    width: 400px;
+.imagen1{
+    width: 500px;
+    grid-area: imagen1;
 
 }
 .parrafo2{
-    font-size: 25px;
+    font-size: 24px;
     width: -60px;
+    top:0px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .parrafo3{
-    font-size: 25px;
-    width: -60px;    
+    font-size: 24px;    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    
 }
-.title3,
+
+
 .parrafo3,
 .imagen2{
     position: relative;
-    top: 50px;
-    font-weight: 100;
     border-radius: 20px;
-    height: -80px;
-    width: -80px;
+    left: -60px;
 
 }
 .imagen2{
-    width: 400px;
+    width: 490px;
+    top: 50px;
+}
+.sub1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -230px;
+    font-size: 60px;
+    top: 70px;
+    
+}
+.sub2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -140px;
+    font-size: 60px;
+    top: 70px;
+    background: var(#ebe5e59d);
 }
