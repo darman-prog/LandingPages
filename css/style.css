@@ -4,7 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-   width: 100%;
+   width: 90%;
    height: 100vh;
    display: grid;
    grid-template-columns: repeat(3,4fr)3fr;
@@ -29,14 +29,15 @@ body{
     font-weight:  -90%;
     grid-area: title1;
     position: relative;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 100;
+
 }
 .title1,
 .parrafo1,
 .imagen0{
     position: relative;
-    top: 250px;
+    top: 40px;
     width: 500px;
     
 }
@@ -59,17 +60,19 @@ body{
     font-size: 24px;
 }
 
-.sub1,
+.sub2,
 .parrafo2,
 .title2,
 .imagen1{
     position: relative;
     top: 50px;
-    left: -150px;
+    left: 30px;
     font-size: 23px;
     font-weight: 100;
     border-radius: 20px;  
     height: -70px;
+    
+
 }
 .imagen1{
     width: 500px;
@@ -97,7 +100,7 @@ body{
 .imagen2{
     position: relative;
     border-radius: 20px;
-    left: 50px;
+    left: 200px;
     top: 50px;
 
 }
@@ -109,15 +112,15 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    left: -230px;
+    left: -50px;
     font-size: 60px;
-    top: 65px;
+    top: 75px;
     
 }
 .sub2{
     font-size: 60px;
     background: var(#ebe5e59d);
     position: relative;
-    top: 60px;
-    left: -30px;
+    top: 120px;
+    left: -370px;   
 }
