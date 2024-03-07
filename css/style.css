@@ -15,7 +15,7 @@ body{
    "parrafo1 . . . ."
    "title2 . . . . "
    "imagen2 . . . . "
-   "parrafo2 . . . ."
+   "sub1 . parrafo2 . . "
    "title3 . . . . "
    "imagen3 . . . . "
    "sub2 . parrafo3 . . "
@@ -29,35 +29,24 @@ body{
     font-weight:  -90%;
     grid-area: title1;
     position: relative;
-    top: 50px;
     font-size: 70px;
     font-weight: 100;
-
 }
-.imagen0,
+.title1,
 .parrafo1,
-.title1{
-    position: relative;
-    right:  ,-50px;
-}
 .imagen0{
     position: relative;
-    top: 380px;
-    display: grid;
-    left: -290px;
+    top: 250px;
+    width: 500px;
+    
 }
 
 .title2{
     grid-area: title2;
     position: relative;
-
-
 }
 .title3{
-    
     position: relative;
-    top: 50px;
-    left: -50px;
     font-weight: 100;
     grid-area: title3;
     font-size: 23px
@@ -65,13 +54,9 @@ body{
 
 }
 .parrafo1{
-    grid-area: parrafo3;
-    position: relative;
-    top: 390px;
-    left: -290px;
-    font-size: 23px;
-    width: -200px;
+    grid-area: parrafo1;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
 }
 
 .sub1,
@@ -92,28 +77,33 @@ body{
 
 }
 .parrafo2{
-    font-size: 24px;
+    font-size: 22px;
     width: -60px;
     top:0px;
     font-family:Arial, Helvetica, sans-serif;
 }
 .parrafo3{
-    font-size: 24px;    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;    
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
+    width: -60px;
+    top:0px;
+
     
 }
 
-
+.title3,
 .parrafo3,
 .imagen2{
     position: relative;
     border-radius: 20px;
-    left: -60px;
+    left: 50px;
+    top: 50px;
 
 }
 .imagen2{
-    width: 490px;
     top: 50px;
+    width: 490px;
 }
 .sub1{
     display: flex;
@@ -121,15 +111,13 @@ body{
     position: relative;
     left: -230px;
     font-size: 60px;
-    top: 70px;
+    top: 65px;
     
 }
 .sub2{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -140px;
     font-size: 60px;
-    top: 70px;
     background: var(#ebe5e59d);
+    position: relative;
+    top: 60px;
+    left: -30px;
 }
